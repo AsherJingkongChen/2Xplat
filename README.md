@@ -5,7 +5,7 @@
 </div>
 
 <div align="center" style="margin-top: 2em; margin-bottom: 1.0em">
-  <a href="https://arxiv.org/abs/2603.21064"><img src="https://img.shields.io/badge/2Xplat-ArXiv-red" alt="arXiv"></a> <a href="https://hwasikjeong.github.io/2Xplat/"><img src="https://img.shields.io/badge/2Xplat-Project_Page-blue" alt="Project Page"></a>
+  <a href="https://arxiv.org/abs/2603.21064"><img src="https://img.shields.io/badge/2Xplat-ArXiv-red" alt="arXiv"></a> <a href="https://hwasikjeong.github.io/2Xplat/"><img src="https://img.shields.io/badge/2Xplat-Project_Page-blue" alt="Project Page"></a> <a href="https://huggingface.co/spaces/HwasikJeong/2Xplat"><img src="https://img.shields.io/badge/2Xplat-Demo-yellow" alt="Demo"></a>
 </div>
 
 <div align="center" style="margin-top: 5.0em; margin-bottom: 1.0em">
