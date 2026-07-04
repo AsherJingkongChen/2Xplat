@@ -12,6 +12,8 @@
   <img src="./assets/teaser_img.png"  alt="2Xplat" />
 </div>
 
+## News
+**[Jul 2026]** 🚀 The 2Xplat demo is now available on 🤗 Hugging Face! Check it out [here](https://huggingface.co/spaces/HwasikJeong/2Xplat)!
 
 ## Installation
 
@@ -32,7 +34,7 @@ pip install git+https://github.com/QitaoZhao/gsplat.git --no-build-isolation
 ```
 
 ## Checkpoints
-We provide some relevant checkpoints on [huggingface🤗](https://huggingface.co/HwasikJeong/2Xplat). Checkpoints should be organized as follows:
+We provide some relevant checkpoints on [🤗 Hugging Face](https://huggingface.co/HwasikJeong/2Xplat). Checkpoints should be organized as follows:
 ```
 path/to/2Xplat/pretrained_weights/
 ├── 2xplat_dl3dv_lr.pt # 2Xplat-G 
