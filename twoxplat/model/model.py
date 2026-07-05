@@ -726,6 +726,7 @@ class TwoExpertModel(nn.Module):
         super().train(mode)
         if not self.inference_mode:
             self.loss_computer.eval()
+        return self
 
     # --- Forward helpers ---
 
