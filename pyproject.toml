@@ -1,0 +1,35 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0", "wheel"]
+
+[project]
+dependencies = [
+    "addict>=2.4.0",
+    "depth-anything-3",
+    "easydict>=1.13",
+    "einops>=0.8.2",
+    "gsplat>=1.5.3",
+    "huggingface-hub>=1.22.0",
+    "imageio>=2.37.3",
+    "lpips>=0.1.4",
+    "matplotlib>=3.11.0",
+    "numpy<2",
+    "omegaconf>=2.3.1",
+    "pillow>=12.3.0",
+    "pyyaml>=6.0.3",
+    "rich>=15.0.0",
+    "safetensors>=0.8.0",
+    "scikit-image>=0.26.0",
+    "scipy>=1.17.1",
+    "torchvision>=0.25.0",
+    "tqdm>=4.68.3",
+    "transformers>=5.13.0",
+    "wandb>=0.28.0",
+]
+name = "twoxplat"
+requires-python = ">= 3.10"
+version = "0.0.1"
+
+[tool.setuptools.packages.find]
+include = ["twoxplat*"]
+where = ["."]
