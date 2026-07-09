@@ -121,10 +121,10 @@ class GeometryExpert:
     ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
         """Forward DA3 on all input+target images and normalize cameras to scene scale."""
         _, v, _, h, w = input_images.shape
-        with torch.autocast(device_type="cuda", enabled=False):
-            all_images = torch.cat([input_images, target_images], dim=1)
-            output = self.pose_regressor(all_images)
+        all_images = torch.cat([input_images, target_images], dim=1)
+        output = self.pose_regressor(all_images)
 
+        with torch.autocast(device_type="cuda", enabled=False):
             i_fxfycxcy_raw = output["fxfycxcy"][:, :v].float()
             i_c2w_raw = output["extrinsics"][:, :v].float()
             t_fxfycxcy_raw = output["fxfycxcy"][:, v:].float()
