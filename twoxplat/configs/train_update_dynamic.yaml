@@ -1,5 +1,6 @@
 model:
   class_name: twoxplat.model.model.TwoExpertModel
+
   dim1: 256
   dim2: 512
   dim3: 1024

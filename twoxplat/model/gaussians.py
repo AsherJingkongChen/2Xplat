@@ -18,7 +18,6 @@ class GaussianField:
     rotation:           torch.Tensor         # (B, N, 4)
     opacity:            torch.Tensor         # (B, N, D, 1) — SH opacity coefficients
     opacity_precompute: torch.Tensor | None  # (B, T, N, D, 1) — None during inference
-    feat: torch.Tensor | None = None         # (B, N, D_f) — dense pixel features before activations
 
 
 # ---------------------------------------------------------------------------

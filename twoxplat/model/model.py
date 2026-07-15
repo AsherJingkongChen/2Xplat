@@ -436,7 +436,6 @@ class AppearanceExpert:
             ph=self.patch_size,
             pw=self.patch_size,
         )
-        dense_feature = gaussians
         xyz, feature, scale, rotation, opacity = torch.split(
             gaussians, [3, self.color_dim, 3, 4, self.opacity_dim], dim=-1,
         )
@@ -472,7 +471,6 @@ class AppearanceExpert:
             rotation=rotation,
             opacity=opacity,
             opacity_precompute=opacity_precompute,
-            feat=dense_feature,
         )
 
     def _run_stage1_blocks(self, x: torch.Tensor, info: dict | None) -> torch.Tensor:
@@ -888,7 +886,6 @@ class TwoExpertModel(nn.Module):
             An edict whose contents depend on the mode (training vs. inference).
         """
         cameras = self.geometry_expert.predict_cameras(input_data_dict, target_data_dict)
-        print("cameras", cameras, flush=True)
         raymap_images, Ks, i_w2c = self._build_raymap_input(
             input_data_dict, cameras.pred_i_fxfycxcy, cameras.pred_i_c2w,
         )
